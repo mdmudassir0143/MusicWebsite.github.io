@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Music</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="js" href="index.js">
+    <link rel="icon" href="./images/music.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./dark/moon.png" class="menu">
+            <div class="social-links">
+                <img src="./extras/tw.png">
+                <img src="./extras/fb.png">
+                <img src="./extras/ig.png">
+
+            </div>
+
+            <div class="useful-links">
+                <img src="./extras/share.png">
+                <img src="./extras/info.png">
+            </div>
+        </div>
+
+
+
+        <div class="content">
+            <div class="left-col">
+                <h1>FEEL<br>THE<br>MUSIC</h1>
+
+            </div>
+
+            <div>
+                <div class="right-col">
+                    <p>Click here to listen</p>
+                    <img src="./images/play.png" alt="" id="icon">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <audio id="mysong">
+            <source src="Heart-Of-The-Ocean.mp3">
+        </audio>
+
+
+        <script>
+            var mysong = document.getElementById("mysong");
+            var icon = document.getElementById("icon");
+
+
+            icon.onclick = function () {
+                if (mysong.paused) {
+                    mysong.play();
+                    icon.src = "././images/pause.png";
+                }
+                else {
+                    mysong.pause();
+                    icon.src = "././images/play.png";
+                }
+            }
+
+            // moon.onclick = function = (){
+            //     document.body.classList.toggle("dark-theme"){
+            //         if (document.body.classList.contains("dark-theme")) {
+            //             icon.src = "./dark/moon.png";
+            //         } else {
+            //             icon.src = "./dark/sun.png";
+            //         }
+            //     }
+            // }
+
+
+// Full screen 
+
+        </script>
+    <input type="button" value="↖" id="btn1" onclick="two();one()"></input>
+<script type="text/javascript">
+    
+	var btn1=document.getElementById("btn1")
+	var el=document.documentElement;
+	
+	function two(){
+
+		if (document.exitFullscreen) {
+			document.exitFullscreen()
+		}	
+	}
+	function one(){
+		if (el.requestFullscreen) {
+			el.requestFullscreen()
+			
+		}
+	}
+    
+
+</script>
+
+
+</body>
+
+</html>
