@@ -1,3 +1,3 @@
 # MusicWebsite.github.io
 
-Desktop Only
+For best experience (use desktop).
